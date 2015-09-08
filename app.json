@@ -1,0 +1,5 @@
+{
+  "name": "Meetup Sample Web App",
+  "description": "A simple web app that talks to mbed endpoints through mDS",
+  "repository": "https://github.com/bridadan/meetup-sample-web-app"
+}
