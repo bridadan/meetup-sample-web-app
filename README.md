@@ -2,6 +2,8 @@
 
 Sample app to control mbed endpoints through mDS/Connector.
 
+[![Deploy](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy?template=https://github.com/bridadan/meetup-sample-web-app)
+
 ## Editing Instructions
 
 To get this project to work, edit the following lines in app.js:
