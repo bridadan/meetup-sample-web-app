@@ -49,7 +49,7 @@ END EDITS
 
 var mds_host = 'http://iot-hack-mds.cloudapp.net:8080';
 var mds_domain = 'iotmeetup';
-var app_port = 3000;
+var app_port = process.env.PORT || 3000;
 
 http.listen(app_port, function(){
   console.log('listening on port', app_port);
