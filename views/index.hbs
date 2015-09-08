@@ -1,0 +1,16 @@
+<h1>Endpoint Control</h1>
+
+{{#each endpoints}}
+<h3>endpoint: {{name}}</h3>
+{{#each resources}}
+<form action="/" method="post">
+  <h4>{{uri}}</h4>
+  <input type="hidden" name="endpoint-name" value="{{../name}}">
+  <input type="hidden" name="resource-uri" value="{{uri}}">
+  <input type="text" name="resource-value" value="{{value}}">
+  <input type="submit" name="submit" value="Write">
+</form>
+{{/each}}
+{{else}}
+<h3>No endpoints connected.</h3>
+{{/each}}
