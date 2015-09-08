@@ -122,7 +122,7 @@ function registerPreSubscription() {
   var preSubscriptionData = [
     {
       "endpoint-name": "light-and-potentiometer",
-      "resource-path": ["/LightSensor/0/L"]
+      "resource-path": ["/LightSensor/0/L", "/LED/0/R"]
     }
   ];
 

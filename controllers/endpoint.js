@@ -33,10 +33,10 @@ EndpointController.prototype.addEndpoint = function(endpoint) {
 EndpointController.prototype.handleNotifications = function(notifications) {
   var _this = this;
   notifications.forEach(function(notification) {
-    if (notification.path === '/LightSensor/0/L') {
+    if (notification.path === '/LightSensor/0/L' || notification.path === '/LED/0/R') {
       var buffer = new Buffer(notification.payload, 'base64'),
           endpoint = _this.endpoints[notification.ep];
-      _this.updateResourceValue(endpoint, '/LightSensor/0/L', buffer.toString());
+      _this.updateResourceValue(endpoint, notification.path, buffer.toString());
     }
   });
 };
